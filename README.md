@@ -70,3 +70,79 @@ Finalmente, em relação às **palavras-chave reservadas** (termos que têm sign
 
 ---
 
+
+
+-----
+
+## 🏗️ Sintaxe das Estruturas de Controle de Fluxo em Python
+
+As estruturas de controle definem a ordem em que as instruções do seu código são executadas. Elas são cruciais e **sempre dependem da correta utilização dos dois pontos (`:`) e da identação**.
+
+### 1\. Instrução Condicional: `if`, `elif`, `else`
+
+Permite que seu código tome decisões com base em condições booleanas (`True` ou `False`).
+
+| Componente | Palavra-chave | Sintaxe Essencial | Observações |
+| :--- | :--- | :--- | :--- |
+| **Condição Principal** | `if` | `if condição:` | O bloco de código que segue **deve ser indentado**. |
+| **Condição Alternativa** | `elif` | `elif outra_condição:` | Abreviação de "else if". É opcional e você pode ter vários. |
+| **Caso Contrário** | `else` | `else:` | É a opção padrão se nenhuma das condições anteriores for `True`. É opcional e não usa condição. |
+
+**Exemplo Sintático:**
+
+```python
+idade = 18
+
+if idade >= 18:  # ⬅️ Note os dois pontos
+    print("Você é maior de idade.")
+elif idade >= 16: # ⬅️ Note os dois pontos
+    print("Você é quase maior de idade.")
+else:            # ⬅️ Note os dois pontos
+    print("Você é menor de idade.")
+```
+
+> [Image of a Python flowchart showing the IF, ELIF, and ELSE structure with branches based on a condition]
+
+-----
+
+### 2\. Laço de Repetição: `for` (Iteração)
+
+Usado para percorrer (iterar) os elementos de uma sequência (como Listas, Strings ou o intervalo criado por `range()`).
+
+| Componente | Palavra-chave | Sintaxe Essencial | Observações |
+| :--- | :--- | :--- | :--- |
+| **Iteração** | `for` | `for item in sequencia:` | `item` é uma variável que recebe, a cada repetição, um valor da `sequencia`. |
+
+**Exemplo Sintático:**
+
+```python
+# Iterando sobre uma Lista
+frutas = ["maçã", "banana", "cereja"]
+for fruta in frutas: # ⬅️ Note os dois pontos
+    print(fruta)     # ⬅️ Bloco indentado
+```
+
+### 3\. Laço de Repetição: `while` (Condicional)
+
+Repete um bloco de código **enquanto** uma condição booleana for `True`.
+
+| Componente | Palavra-chave | Sintaxe Essencial | Observações |
+| :--- | :--- | :--- | :--- |
+| **Condição de Repetição** | `while` | `while condição:` | **Cuidado:** Se a condição nunca se tornar `False`, o laço entra em loop infinito. |
+
+**Exemplo Sintático:**
+
+```python
+contador = 0
+while contador < 3: # ⬅️ Note os dois pontos
+    print(f"Contando: {contador}")
+    contador = contador + 1 # ⬅️ Essencial para sair do loop!
+```
+
+**Lembre-se:** A **identação** e os **dois pontos (`:`)** são os elementos-chave para que o interpretador Python saiba qual código pertence a cada estrutura de controle.
+
+
+
+
+
+
